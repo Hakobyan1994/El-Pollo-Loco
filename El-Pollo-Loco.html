@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/x-icon" href="img/favicon/favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Pollo Loco</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./models/drawable-object.class.js"></script>
+    <script src="./models/movable-object.class.js"></script>
+    <script src="./models/character.class.js"></script>
+    <script src="./models/chicken.class.js"></script>
+    <script src="./models/status-bar.class.js"></script>
+    <script src="./models/status-barBottle.class.js"></script>
+    <script src="./models/status-barCoin.class.js"></script>
+    <script src="./models/status-barEndBoss.class.js"></script>
+    <script src="./models/endBossInfo.class.js"></script>
+    <script src="./models/gameover.class.js"></script>
+    <script src="./models/win.class.js"></script>
+    <script src="./models/audio-manager.class.js"></script>
+    <script src="./models/cloud.class.js"></script>
+    <script src="./models/coins.class.js"></script>
+    <script src="./models/bottles.class.js"></script>
+    <script src="./models/background-object.class.js"></script>
+    <script src="./models/keyboard.class.js"></script>
+    <script src="./models/stopplay.class.js"></script>
+    <script src="./models/level.class.js"></script>
+    <script src="./models/throwable-objsect.class.js"></script>
+    <script src="./models/endboss.class.js"></script>
+    <script src="./levels/level1.js"></script>
+    <script src="./models/small-chicken.js"></script>
+    <script src="./models/world.class.js"></script>
+</head>
+<body>
+    <div class="transparenterDiv" id="transparenterDiv">
+        <img class="start-image" src="img/9_intro_outro_screens/start/startscreen_1.png">
+         <div class="button-div">
+            <button class="start-button" onclick="startGame()">Start Game</button>
+            <button class="game-info" onclick="gameInfo()">Game Info</button>
+            <button onclick="enterPrivacyPOlicy()" class="privacy-policy">Privacy Policy</button>
+            <button onclick="enterLegalNoticy()" class="legal-notice">Legal Notice</button>
+        </div>
+    </div>
+    <div class="turn-screen" id="turnScreen">
+        <p>Please rotate the phone and go fullscreen</p>
+    </div>
+    <div class="title">
+        <h1 class="game-title" id="h1">El pollo loco</h1>
+    </div>
+    <div class="maindiv" id="maindiv">
+        <canvas id="canvas" width="720" height="480"></canvas>
+        <img onclick="makeSoundOn()" id="soundOn" class="sound-icon" src="img/soun_icon/sound-on.png" alt="">
+        <img onclick="makeSoundOff()" id="soundOff" class="soun-icon-off" src="img/soun_icon/sound-off.png" alt="">
+        <img id="fullscreeenImage" class="fullscreeenImage" src="img/fullscreen/fullscreen-24.png"
+            onclick="enterFullscreen()">
+        <img id="fullscreeenImageExit" class="fullscreeenImageExit" src="img/fullscreen/minifullscreen.png"
+            onclick="exitFullscreen()">
+        <div id="direction-move" class="direction-move">
+            <img id="leftButton" onclick="moveLeft()" src="./img/phone_buttons/left.png">
+            <img id="rightButton" onclick="moveRight()" src="./img/phone_buttons/right.png">
+        </div>
+        <div id="jump-bottle" class="jump-bottle">
+            <img id="jump" onclick="jump()" src="./img/phone_buttons/oben.png">
+            <img id="throwBottle" onclick="throwBottle()" class="bottle-icon" src="./img/phone_buttons/bottle.png">
+        </div>
+        <div id="loadingDiv" class="loadingDiv">
+            <div class="loader"></div>
+        </div>
+        <div id="gameover" class="gameover">
+            <h1 class="afterGameInfo" id="afterGameInfo"></h1>
+        </div>
+    </div>
+    <script src="js/game.js"></script>
+</body>
+</html>

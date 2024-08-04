@@ -1,0 +1,141 @@
+@font-face {
+    font-family: 'zabras';
+    src: url('/font/zabars.ttf') format('truetype');
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden; /* Verhindert das Scrollen */
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+    position: relative;
+    font-family: cursive;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/9_intro_outro_screens/start/startscreen_1.png');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5; 
+    z-index: 1; 
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-family: 'zabras';
+    color: #00bcd4;
+    letter-spacing: 3px;
+}
+
+main {
+    padding: 2em;
+    height: calc(100% - 160px);
+    position: relative;
+    z-index: 1;
+}
+
+section {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.back-button {
+    display: inline-block;
+    background-color: #FF5733;
+    color: #00bcd4;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 24px;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: 'zabras';
+    letter-spacing: 2px;
+    text-shadow: 4px 2px 4px rgba(0, 0, 0, 0.5);
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 14.3);
+}
+.back-button:hover {
+    background-color: #C70039;
+}
+
+.controls {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+} 
+p{
+    font-size: 20px;
+}
+
+.controls h2 {
+    font-size: 2em;
+    margin-top: 0;
+    color: #FF5733;
+    letter-spacing: 2px;
+}
+
+.control-list, .mechanic-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.control-item, .mechanic-item {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    padding-left: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.control-item .key {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    font-size: 1.5em;
+    font-weight: bold;
+    min-width: 60px;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: 1;
+    font-family: 'zabras';
+    letter-spacing: 3px;
+     color: #00bcd4;;
+}
+
+ 
