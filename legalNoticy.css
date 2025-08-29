@@ -1,0 +1,98 @@
+@font-face {
+    font-family: 'zabras';
+    src: url('/font/zabars.ttf') format('truetype');
+}
+
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: cursive;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-family: 'zabras';
+    letter-spacing: 3px;
+    color: #00bcd4;
+    text-shadow: 4px 2px 4px rgba(0, 0, 0, 5.5);
+
+}
+
+main {
+    flex: 1;
+    padding: 2em;
+    background-color: #fff;
+}
+
+.impressum {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    padding: 2em;
+    max-width: 600px;
+    margin: 0 auto;
+
+}
+
+.impressum p {
+    margin: 0.5em 0;
+}
+
+.impressum a {
+    color: #FF5733;
+    text-decoration: none;
+}
+
+.impressum a:hover {
+    text-decoration: underline;
+}
+
+.back-button {
+    display: inline-block;
+    background-color: #FF5733;
+    color:  #00bcd4;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 24px;
+    cursor: pointer;
+    text-decoration: none;
+    font-family:'zabras';
+    letter-spacing: 2px;
+    text-shadow: 4px 2px 4px rgba(0, 0, 0, 0.5);
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 14.3);
+}
+
+.back-button:hover {
+    background-color: #C70039;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+    font-family: 'zabras';
+    color: #00bcd4;
+    font-size: 20px;
+    letter-spacing: 3px;
+    text-shadow: 4px 2px 4px rgba(0, 0, 0, 5.5);
+}

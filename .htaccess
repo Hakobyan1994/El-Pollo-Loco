@@ -1,0 +1,18 @@
+RewriteEngine On
+
+# Regel für die Privacy Policy
+RewriteCond %{REQUEST_URI} ^/privacy_policy\.html$
+RewriteRule ^privacy_policy\.html$ /polloloco/data-protection/privacy_policy.html [L,R=301]
+
+
+
+
+# Regel, um sicherzustellen, dass /polloloco/game-info/ in der URL vorhanden ist
+RewriteCond %{REQUEST_URI} ^/game_Info\.html$
+RewriteRule ^game_Info\.html$ /polloloco/game-info/game_Info.html [L,R=301]
+
+
+
+# Regel, um sicherzustellen, dass /Join/ in der URL vorhanden ist
+RewriteCond %{REQUEST_URI} ^/files/start\.html$
+RewriteRule ^files/start\.html$ /Join/files/start.html [L,R=301]
